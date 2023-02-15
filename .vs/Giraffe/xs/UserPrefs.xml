@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{FA01A4B2-CF38-4FEF-ABCC-9D77F37A392E}|Default">
+  <MonoDevelop.Ide.ItemProperties.Giraffe PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Giraffe/Program.cs">
     <Files>
-      <File FileName="Giraffe/Program.cs" Line="42" Column="36" />
+      <File FileName="Giraffe/Program.cs" Line="86" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +15,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Giraffe PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
