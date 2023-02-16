@@ -79,16 +79,34 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //    Console.WriteLine("Hello " + name  + age);
             //}
 
-            int cubenumber = cube(5);
-            Console.WriteLine(cubenumber);
+            //int cubenumber = cube(5);
+            //Console.WriteLine(cubenumber);
+            //Console.ReadLine();
+
+            
+            
+            //static int cube(int num)
+            //{
+            //    int result = num * num * num;
+            //    return result;
+            
+            bool isMale = true;
+            bool isTall = false;
+
+            if (isMale && isTall) // || or &&
+            {
+                Console.WriteLine("You are male");
+            } else if (isMale && !isTall)
+            {
+                Console.WriteLine("Male but short");
+            }
+
+            else
+            {
+                Console.WriteLine("Gay!");
+            }
+
             Console.ReadLine();
-
-        }
-
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            return result;
         }
     }
 }
