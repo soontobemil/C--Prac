@@ -1,4 +1,5 @@
 ﻿using System;
+using Giraffe;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -6,27 +7,12 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Console.Write("Enter1: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter2: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "JK Rowling";
+            book1.pages = 400;
 
-                Console.WriteLine(num1 / num2);
-            }
-            catch(FormatException e) // diff types of exception is avaliable 
-            {
-                Console.WriteLine(e.Message);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            finally //will get executed no matter what
-            {
-                Console.WriteLine("Program is ending");
-            }
+            Console.WriteLine(book1.title);
             Console.ReadLine();
         }
     }
