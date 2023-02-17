@@ -6,21 +6,20 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(getPow(3, 2));
 
-            //int i = 1;
-            //while (i <=5)
-            //{
-            //    Console.WriteLine(i);
-            //    i++;
-            //}
-
-            int[] luckyNumbers = { 5, 7, 55, 99, 19 };
-            for (int i = 0; i < luckyNumbers.Length; i++)
+        static int getPow(int baseNum, int powNum)
             {
-                Console.WriteLine(luckyNumbers[i]);
-            }
-            Console.ReadLine(); 
+                int result = 1;
 
+                for (int i = 0; i < powNum; i++)
+                {
+                    result = result * baseNum;
+                }
+                return result;
+            }
+
+            Console.ReadLine();
         }
     }
 }
