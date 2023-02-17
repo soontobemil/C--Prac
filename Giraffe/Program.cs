@@ -6,42 +6,21 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            string secretWord = "Hi";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
 
-            while (guess != secretWord && !outOfGuesses)
+            //int i = 1;
+            //while (i <=5)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+
+            int[] luckyNumbers = { 5, 7, 55, 99, 19 };
+            for (int i = 0; i < luckyNumbers.Length; i++)
             {
-                if (guessCount < guessLimit)
-                {
-                    Console.Write("Enter Guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-
-                    if (guess == secretWord)
-                    {
-                        Console.WriteLine("You win!");
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Wrong guess, try again.");
-                    }
-                }
-                else
-                {
-                    outOfGuesses = true;
-                }
+                Console.WriteLine(luckyNumbers[i]);
             }
+            Console.ReadLine(); 
 
-            if (outOfGuesses)
-            {
-                Console.WriteLine("You lost!");
-            }
-
-            Console.ReadLine();
         }
     }
 }
