@@ -83,30 +83,80 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //Console.WriteLine(cubenumber);
             //Console.ReadLine();
 
-            
-            
+
+
             //static int cube(int num)
             //{
             //    int result = num * num * num;
             //    return result;
-            
-            bool isMale = true;
-            bool isTall = false;
 
-            if (isMale && isTall) // || or &&
-            {
-                Console.WriteLine("You are male");
-            } else if (isMale && !isTall)
-            {
-                Console.WriteLine("Male but short");
-            }
+            //bool isMale = true;
+            //bool isTall = false;
 
-            else
-            {
-                Console.WriteLine("Gay!");
-            }
+            //if (isMale && isTall) // || or &&
+            //{
+            //    Console.WriteLine("You are male");
+            //} else if (isMale && !isTall)
+            //{
+            //    Console.WriteLine("Male but short");
+            //}
 
+            //else
+            //{
+            //    Console.WriteLine("Gay!");
+            //}
+
+            //Console.ReadLine();
+
+
+            // IF calculator
+            //Console.WriteLine("Enter a number: ");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
+
+            //Console.Write("Enter Operator: ");
+            //string op = Console.ReadLine();
+
+            //Console.WriteLine("Enter a number: ");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
+
+
+            //if (op == "+")
+            //{
+            //    Console.WriteLine(num1 + num2);
+            //} else if (op == "-")
+            //{
+            //    Console.WriteLine(num1 - num2);
+            //}
+            //else if (op == "/")
+            //{
+            //    Console.WriteLine(num1 / num2);
+            //}
+            //else if (op == "*")
+            //{
+            //    Console.WriteLine(num1 * num2);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid Operator");
+            //}
+
+            Console.WriteLine(GetDay(0));
             Console.ReadLine();
+        }
+        static string GetDay(int dayNum)
+        {
+            string dayName;
+
+            switch (dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid Day";
+                    break;
+
+            }
         }
     }
 }
