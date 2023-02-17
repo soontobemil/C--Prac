@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System;
+﻿using System;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -8,16 +6,42 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            string secretWord = "Hi";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
 
-            int index = 1;
-            while(index <= 5)
+            while (guess != secretWord && !outOfGuesses)
             {
-                Console.WriteLine(index);
-                index++;
-            }
-            Console.ReadLine();
-    
-        }
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Enter Guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
 
+                    if (guess == secretWord)
+                    {
+                        Console.WriteLine("You win!");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong guess, try again.");
+                    }
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+            }
+
+            if (outOfGuesses)
+            {
+                Console.WriteLine("You lost!");
+            }
+
+            Console.ReadLine();
+        }
     }
 }
