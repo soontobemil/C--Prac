@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jaysim/C#/Giraffe/Giraffe/Giraffe.csproj": {}
+    "/Users/jaysim/personal/C#/Giraffe/Giraffe/Giraffe.csproj": {}
   },
   "projects": {
-    "/Users/jaysim/C#/Giraffe/Giraffe/Giraffe.csproj": {
+    "/Users/jaysim/personal/C#/Giraffe/Giraffe/Giraffe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jaysim/C#/Giraffe/Giraffe/Giraffe.csproj",
+        "projectUniqueName": "/Users/jaysim/personal/C#/Giraffe/Giraffe/Giraffe.csproj",
         "projectName": "Giraffe",
-        "projectPath": "/Users/jaysim/C#/Giraffe/Giraffe/Giraffe.csproj",
+        "projectPath": "/Users/jaysim/personal/C#/Giraffe/Giraffe/Giraffe.csproj",
         "packagesPath": "/Users/jaysim/.nuget/packages/",
-        "outputPath": "/Users/jaysim/C#/Giraffe/Giraffe/obj/",
+        "outputPath": "/Users/jaysim/personal/C#/Giraffe/Giraffe/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jaysim/.nuget/NuGet/NuGet.Config"
